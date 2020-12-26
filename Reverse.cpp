@@ -47,6 +47,7 @@ int main()
     srand(chrono::high_resolution_clock::now().time_since_epoch().count());
 
     int n;
+    int k;
     cin >> n;
     int arr[n];
 
