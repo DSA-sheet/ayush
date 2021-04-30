@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.jsx": "javascript",
+        "functional": "cpp"
+    }
+}
