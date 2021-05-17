@@ -2,22 +2,25 @@
 using namespace std;
 typedef long long int ll;
 
-vector<int> get_array()
+void printsubsequence(string str, string output)
 {
-    int a;
-    vector<int> arr;
-    while (std::cin >> a)
-        arr.push_back(a);
-}
 
+    if (str.empty())
+    {
+        cout << output << endl;
+        return;
+    }
+
+    printsubsequence(str.substr(1), output + str[0]);
+    printsubsequence(str.substr(1), output);
+}
 int main()
 {
+    string input = "abc";
+    string output = "";
+
+    printsubsequence(input, output);
+
     //code
-
-    vector<int> arr = get_array();
-
-    for (int i = 0; i < arr.size(); i++)
-        cout << arr[i] << " ";
-
     return 0;
 }
