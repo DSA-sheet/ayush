@@ -97,4 +97,5 @@ int main()
     cout << "Following are connected components \n";
     g.connectedComponents();
  
-    return 
+    return 0;
+}
